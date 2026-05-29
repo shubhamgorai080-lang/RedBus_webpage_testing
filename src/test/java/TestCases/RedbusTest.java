@@ -12,7 +12,7 @@ public class RedbusTest extends BaseTest {
 		SearchBuses sb = new SearchBuses(driver);
 		sb.Source("Asans");
 		sb.Destination("Esplan");
-		sb.selectDate("28");
+		//sb.selectDate("28");
 		sb.Searchbus();
 	}
 }

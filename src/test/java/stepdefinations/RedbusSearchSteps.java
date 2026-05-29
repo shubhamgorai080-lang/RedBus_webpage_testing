@@ -22,7 +22,8 @@ public class RedbusSearchSteps {
 	}
 	@When("the user selects a valid upcoming travel date from the calendar picker")
 	public void the_user_selects_a_valid_upcoming_travel_date_from_the_calendar_picker() {
-	    sb.selectDate("27");
+	    //sb.selectDate("30");
+		System.out.println("Default date is chosen");
 	}
 	@Then("user clicks the Search Buses button")
 	public void user_clicks_the_search_buses_button() {

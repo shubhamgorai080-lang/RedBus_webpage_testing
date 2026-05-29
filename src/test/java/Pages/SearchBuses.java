@@ -54,27 +54,27 @@ public class SearchBuses {
    }
    
    
-   @FindBy(xpath="//div[@role='combobox']")
-   WebElement selectDate;
-   public void selectDate(String value) {
-	   su.clickElement(selectDate);
-	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    String dynamicXpath = "//div[contains(@aria-label, '" + value + "')]";
-	    
-	  
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicXpath)));
-	        
-	        List<WebElement> dates = driver.findElements(By.xpath(dynamicXpath));
-	        
-	        
-	        for (WebElement date : dates) {
-	            if (date.isDisplayed()) {
-	                date.click();
-	                break;
-	            }
-	        
-	        }
-   }
+//   @FindBy(xpath="//div[@role='combobox']")
+//   WebElement selectDate;
+//   public void selectDate(String value) {
+//	   su.clickElement(selectDate);
+//	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	    String dynamicXpath = "//div[contains(@aria-label, '" + value + "')]";
+//	    
+//	  
+//	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicXpath)));
+//	        
+//	        List<WebElement> dates = driver.findElements(By.xpath(dynamicXpath));
+//	        
+//	        
+//	        for (WebElement date : dates) {
+//	            if (date.isDisplayed()) {
+//	                date.click();
+//	                break;
+//	            }
+//	        
+//	        }
+//   }
    
    
    

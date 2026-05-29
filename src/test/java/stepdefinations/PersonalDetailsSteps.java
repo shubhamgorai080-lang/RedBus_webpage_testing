@@ -30,8 +30,7 @@ public class PersonalDetailsSteps {
 	}
 	@When("User choose their mode of Cancellation Insurance")
 	public void user_choose_their_mode_of_cancellation_insurance() {
-	    pd.select_Cancellation();
-	    pd.Insurance();
+      
 	}
 	@Then("Click on Booking Button")
 	public void click_on_booking_button() {

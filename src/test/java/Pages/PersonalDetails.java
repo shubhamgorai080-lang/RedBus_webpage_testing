@@ -71,18 +71,7 @@ public class PersonalDetails {
 		su.clickElement(Gender);
 	}
 	
-	@FindBy(xpath="//div[@aria-label='Add Free Cancellation, Only for ₹70 per passenger']")
-	WebElement Cancellation;
-	public void select_Cancellation() {
-		su.clickElement(Cancellation);
-	}
-	
-	@FindBy(id="insuranceConfirmText")
-	WebElement insurance;
-	public void Insurance() {
-		su.clickElement(insurance);
-	}
-	
+
 	@FindBy(xpath="//button[text()='Continue booking']")
 	WebElement Booking_btn;
 	public void booking () {
