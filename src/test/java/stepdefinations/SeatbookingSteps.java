@@ -9,7 +9,7 @@ public class SeatbookingSteps {
 	
 	@Then("User select their seat as per their choice")
 	public void user_select_their_seat_as_per_their_choice() {
-	  SeatSelect.chooseSeat("30");
+	  SeatSelect.chooseSeat("39");
 	  SeatSelect.Click_Boarding();
 	}
 	

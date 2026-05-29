@@ -58,15 +58,14 @@ public class SelectSeatsWithBoarding {
   }
   
   //choosing the boarding location
-  @FindBy(xpath="//div[text()='Lower Chelidanga']")
+  @FindBy(xpath="//div[text()='Lower Chelidanga' or text()='Chelidanga']")
   WebElement Boarding;
   public void Board_location() {
 	  su.clickElement(Boarding);
   }
   
   //choosing the drop location
-  @FindBy(xpath="//div[text()='Esplande Bus Stand']")
- // @FindBy(xpath = "//div[contains(text(), 'Esplanade')]")
+  @FindBy(xpath = "//div[text()='Esplande Bus Stand' or text()='Esplanade']")
   WebElement Drop;
   public void Drop_location() {
 	  su.clickElement(Drop);
