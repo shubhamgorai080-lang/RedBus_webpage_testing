@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RedBus Automation Suite" parallel="none">
+  <test name="RedBus UI Tests">
+    <classes>
+      <class name="Runner.TestRunner"/>
+    </classes>
+  </test> </suite>
